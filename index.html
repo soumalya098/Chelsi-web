@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Chelsu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      overflow: hidden;
+    }
+
+    /* Background PNG */
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -3;
+      background: url('background.png') no-repeat center center/cover;
+    }
+
+    /* Cherry Blossom GIF Overlay */
+    .gif-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      background: url('cherry.gif') no-repeat center center/cover;
+      opacity: 0.9; /* Slight transparency for a soft look */
+    }
+
+    /* Content Container */
+    .container {
+      text-align: center;
+      color: #fff;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: #FF69B4;
+      text-shadow: 4px 4px 10px #000;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      padding: 15px 30px;
+      font-size: 1.3rem;
+      margin: 15px;
+      color: #fff;
+      background: linear-gradient(90deg, #ff69b4, #ff1493);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(255, 20, 147, 0.5);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    }
+
+    .buttons button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 30px rgba(255, 20, 147, 0.7);
+      background: linear-gradient(90deg, #ff1493, #ff69b4);
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="gif-overlay"></div>
+  <div class="container">
+    <h1>𝐇ᴀᴘᴘʏ 𝐁ɪʀᴛʜᴅᴀʏ 𝐂ʜᴇʟsᴜ</h1>
+    <div class="buttons">
+      <button onclick="window.location.href='card.html'">ᴄᴀʀᴅ</button>
+      <button onclick="window.location.href='cake.html'">ᴄᴀᴋᴇ</button>
+      <button onclick="window.location.href='treasure.html'">ᴛʀᴇᴀsᴜʀᴇ</button>
+    </div>
+  </div>
+</body>
+</html>
